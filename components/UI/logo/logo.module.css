@@ -1,0 +1,23 @@
+.logo {
+	flex: 2;
+	font-size: 45px;
+	font-weight: 700;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+@media(max-width: 920px){
+	.logo{
+		font-size: 35px;
+	}
+}
+@media(max-width: 768px){
+	.logo{
+		flex:3;
+		font-size: 35px;
+		justify-content: center;
+	}
+}
