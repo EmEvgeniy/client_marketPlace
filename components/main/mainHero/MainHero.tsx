@@ -1,0 +1,25 @@
+import { FC } from "react";
+import classes from "./mainHero.module.css";
+import Container from "@/components/UI/container/Container";
+import SliderBackground from "@/components/UI/sliderBackgroud/SliderBackground";
+import SearchComp from "@/components/UI/searchComp/SearchComp";
+import BenefitsComp from "@/components/UI/benefitsComp/BenefitsComp";
+
+const MainHero: FC = () => {
+	return (
+		<div className={classes.MainHer}>
+			<SliderBackground />
+			<Container>
+				<div className={classes.inner}>
+					<h1>
+						Author`s tours - new approach to <br /> unexplored travel routes
+					</h1>
+					<SearchComp />
+					<BenefitsComp />
+				</div>
+			</Container>
+		</div>
+	);
+};
+
+export default MainHero;

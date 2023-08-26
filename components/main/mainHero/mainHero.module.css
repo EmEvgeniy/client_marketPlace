@@ -1,0 +1,47 @@
+.MainHer {
+	position: relative;
+	width: 100%;
+	/* height: 100%; */
+	margin-bottom: 200px;
+}
+.inner {
+	padding: 50px 0 150px 0;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.inner h1 {
+	z-index: 2;
+	font-size: 45px;
+}
+@media (max-width: 920px) {
+	.MainHer {
+		position: relative;
+		width: 100%;
+		/* height: 100%; */
+		margin-bottom: 300px;
+	}
+}
+
+@media (max-width: 768px) {
+	.MainHer {
+		position: relative;
+		width: 100%;
+		/* height: 100%; */
+		margin-bottom: 470px;
+	}
+	.inner h1 {
+		text-align: center;
+		font-size: 30px;
+	}
+	.inner {
+		padding: 50px 0 250px 0;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+}
