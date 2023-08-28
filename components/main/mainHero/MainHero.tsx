@@ -4,6 +4,7 @@ import Container from "@/components/UI/container/Container";
 import SliderBackground from "@/components/UI/sliderBackgroud/SliderBackground";
 import SearchComp from "@/components/UI/searchComp/SearchComp";
 import BenefitsComp from "@/components/UI/benefitsComp/BenefitsComp";
+import MainTitleComp from "@/components/UI/mainTitleComp/MainTitleComp";
 
 const MainHero: FC = () => {
 	return (
@@ -11,9 +12,7 @@ const MainHero: FC = () => {
 			<SliderBackground />
 			<Container>
 				<div className={classes.inner}>
-					<h1>
-						Author`s tours - new approach to <br /> unexplored travel routes
-					</h1>
+					<MainTitleComp />
 					<SearchComp />
 					<BenefitsComp />
 				</div>

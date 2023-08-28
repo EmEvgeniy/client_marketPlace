@@ -1,0 +1,122 @@
+.CardComp {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: center;
+	padding: 20px;
+	gap: 10px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.CardComp:hover {
+	transform: scale(1.05);
+}
+.CardComp:active{
+	transform: scale(1);
+}
+.CardComp img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.CardComp::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	height: 100%;
+	border-radius: 0px 0px 12px 12px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+.title {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+.text {
+	position: relative;
+	z-index: 2;
+	font-size: 14px;
+	color: #c7c7c7;
+	font-weight: 300;
+}
+@media (max-width: 1200px) {
+	.CardComp {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		text-align: center;
+		padding: 20px;
+		gap: 10px;
+	}
+}
+@media (max-width: 769px) {
+	.CardComp {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		text-align: center;
+		padding: 20px;
+		gap: 10px;
+	}
+	.title {
+		position: relative;
+		z-index: 2;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.text {
+		position: relative;
+		z-index: 2;
+		font-size: 12px;
+		color: #c7c7c7;
+		font-weight: 300;
+	}
+}
+@media (max-width: 500px) {
+	.CardComp {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		text-align: center;
+		padding: 10px;
+		gap: 10px;
+	}
+	.title {
+		position: relative;
+		z-index: 2;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	.text {
+		position: relative;
+		z-index: 2;
+		font-size: 12px;
+		color: #c7c7c7;
+		font-weight: 300;
+	}
+}

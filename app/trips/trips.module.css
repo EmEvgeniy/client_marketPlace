@@ -1,0 +1,16 @@
+.inner {
+	padding: 40px 0;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: flex-start;
+	gap: 20px;
+}
+@media(max-width: 768px){
+	.inner {
+		padding: 40px 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: flex-start;
+		gap: 20px;
+	}
+}

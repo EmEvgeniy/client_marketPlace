@@ -1,14 +1,16 @@
 import { FC } from "react";
 import classes from "./insperation.module.css";
 import Container from "@/components/UI/container/Container";
+import TitleComp from "@/components/UI/titleComp/TitleComp";
+import InsperationContent from "./insperationContent/InsperationContent";
 
 const Insperation: FC = () => {
 	return (
 		<div className={classes.Insperation}>
 			<Container>
 				<div className={classes.inner}>
-					<h2>PLACES FOR INSPIRATION</h2>
-					<p>A selection of popular destinations by type today</p>
+					<TitleComp />
+					<InsperationContent />
 				</div>
 			</Container>
 		</div>

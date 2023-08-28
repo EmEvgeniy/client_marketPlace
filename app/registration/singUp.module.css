@@ -1,0 +1,150 @@
+.SignUp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.inner {
+	margin: 40px 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.checkbox_wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
+	width: 100%;
+	grid-gap: 20px;
+	margin: 10px 0;
+}
+.checkbox {
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	padding: 5px 10px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+}
+.info span {
+	font-size: 12px;
+}
+.top {
+	width: 100%;
+}
+.info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(204px, 1fr));
+	width: 100%;
+	grid-gap: 20px;
+	margin: 10px 0;
+	width: 100%;
+}
+.inner span {
+	font-size: 13px;
+	text-align: left;
+	width: 100%;
+}
+.btn {
+	margin: 20px 10px;
+	padding: 10px 0;
+	font-size: 14px;
+	border-radius: 10px;
+	background: #ffcb66;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.politic {
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 20px 0;
+}
+.politic p {
+	width: 100%;
+	font-size: 14px;
+	padding: 0 0px;
+}
+.form {
+	padding: 20px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	margin-right: 10px;
+	gap: 20px;
+}
+.form h2 {
+	font-size: 23px;
+	font-weight: 700;
+	margin: 0 0 10px 0;
+}
+.sub_title {
+	font-size: 16px;
+	margin: 10px 0;
+}
+.sub_title span {
+	font-weight: 700;
+}
+
+.radio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+	.inner {
+		flex-wrap: wrap;
+	}
+	.form {
+		margin: 0 0 20px 0;
+	}
+	.banner {
+		margin: 0;
+	}
+}
+@media (max-width: 768px) {
+	.politic {
+		font-size: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 20px 0;
+	}
+	.politic p {
+		width: 100%;
+	}
+}
+@media (max-width: 530px) {
+	.banner {
+		display: none;
+	}
+	.form h2 {
+		font-size: 18px;
+		font-weight: 700;
+		margin: 0 0 10px 0;
+		text-align: center;
+	}
+	.sub_title {
+		font-size: 14px;
+		margin: 10px 0;
+		text-align: center;
+	}
+	.btn {
+		font-size: 14px;
+	}
+}

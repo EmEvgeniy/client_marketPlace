@@ -1,0 +1,26 @@
+.TitleComp {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin: 40px 0 60px 0px;
+}
+.TitleComp h2 {
+	font-size: 30px;
+}
+.TitleComp p {
+	font-size: 16px;
+}
+@media(max-width: 768px){
+	.TitleComp{
+		text-align: center;
+		align-items: center;
+		padding: 0;
+	}
+	.TitleComp h2{
+		text-align: center;
+		font-size: 25px;
+	}
+}

@@ -1,0 +1,16 @@
+.PopularTour {
+	margin: 70px 0;
+	width: 100%;
+}
+.inner h3 {
+	font-size: 30px;
+	padding: 0 0 0 0px;
+}
+
+@media (max-width: 768px) {
+	.inner h3 {
+		font-size: 25px;
+		padding: 0 0 0 0px;
+		text-align: center;
+	}
+}

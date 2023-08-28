@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import classes from './sliderBackground.module.css'
 
 // Import Swiper styles
 import "swiper/css";
@@ -28,7 +29,7 @@ export default function SliderBackground() {
 					clickable: true,
 				}}
 				modules={[EffectFade, Pagination, Autoplay]}
-				className='custom-swiper-container'>
+				className={classes.Swiper}>
 				<SwiperSlide>
 					<Image
 						src={img1}

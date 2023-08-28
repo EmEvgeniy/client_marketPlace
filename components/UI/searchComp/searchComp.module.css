@@ -61,3 +61,14 @@
 		gap: 10px;
 	}
 }
+@media(max-width:500px){
+	.form {
+		display: grid;
+		grid-template-rows: 1fr;
+		align-items: center;
+		width: 100%;
+		gap: 10px;
+		padding: 0px 0px;
+		
+	}
+}

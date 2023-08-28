@@ -1,0 +1,36 @@
+.tripContent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-start;
+	gap: 20px;
+}
+.sort_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+}
+.bottom {
+	display: none;
+}
+.inner {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+	justify-items: center;
+
+	width: 100%;
+	gap: 20px;
+	padding: 20px 0;
+}
+@media (max-width: 768px) {
+	.bottom {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+		width: 100%;
+	}
+}

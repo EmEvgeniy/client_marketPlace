@@ -8,6 +8,7 @@ import icon4 from "../../../public/7.svg";
 import { useLand } from "@/store/store";
 import Image from "next/image";
 import Container from "../container/Container";
+import { motion } from "framer-motion";
 
 const list = [
 	{
@@ -57,7 +58,12 @@ const list2 = [
 const BenefitsComp: FC = () => {
 	const lang = useLand((state) => state.lang);
 	return (
-		<div className={classes.benefits}>
+		<motion.div
+			initial={{ opacity: 0, scale: 0 }}
+			animate={{ opacity: 1, scale: 1 }}
+			exit={{ opacity: 0, scale: 0 }}
+			transition={{ delay: 0.5, duration: 0.5 }}
+			className={classes.benefits}>
 			<Container>
 				<div className={classes.inner}>
 					{lang == "EN"
@@ -77,7 +83,7 @@ const BenefitsComp: FC = () => {
 						  ))}
 				</div>
 			</Container>
-		</div>
+		</motion.div>
 	);
 };
 
